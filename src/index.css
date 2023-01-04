@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply min-h-screen flex items-center justify-center;
+}
+
+h1{
+    @apply text-7xl;
+}
