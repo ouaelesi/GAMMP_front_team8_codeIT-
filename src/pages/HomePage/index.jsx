@@ -1,9 +1,10 @@
-import HelloWorld from '../../components/HelloWorld'
 import './style.css'
 
 const HomePage = () => {
     return (
-        <HelloWorld />
+        <>
+            <h1>this is a home page</h1>
+        </>
     )
 }
 
