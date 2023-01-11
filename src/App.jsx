@@ -6,13 +6,13 @@ import './index.css'
 
 function App() {
   return (
-    <>
+    <main className="bg-main-bg">
       <SideBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
       </Routes>
-    </>
+    </main>
   )
 }
 

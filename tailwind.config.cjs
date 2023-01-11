@@ -10,7 +10,8 @@ module.exports = {
         'success-dark': '#027A48',
         'success': '#32D583',
         'failed-dark': '#F04438',
-        'failed': '#feeceb'
+        'failed': '#feeceb',
+        'main-bg': '#f8f8f8'
       },
       fontFamily: {
         'MainFont': ['Montserrat', 'sans-serif'],
