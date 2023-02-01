@@ -6,7 +6,7 @@ import './index.css'
 
 function App() {
   return (
-    <main className="bg-main-bg">
+    <main className="bg-main-bg min-h-screen">
       <SideBar />
       <Routes>
         <Route path='/' element={<HomePage />} />

@@ -1,10 +1,11 @@
 import './style.css'
+import Ranking from "../../components/Ranking"
 
 const HomePage = () => {
     return (
-        <>
-            <h1>this is a home page</h1>
-        </>
+        <div className='flex justify-center items-center'>
+            <Ranking />
+        </div>
     )
 }
 
