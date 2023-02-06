@@ -6,13 +6,15 @@ import './index.css'
 
 function App() {
   return (
-    <main className="bg-main-bg">
+    <div className="bg-main-bg flex w-max">
       <SideBar />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-      </Routes>
-    </main>
+      <main className="flex-1">
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+        </Routes>
+      </main>
+    </div>
   )
 }
 

@@ -1,0 +1,83 @@
+
+:root{
+    --color-black : #1F1F1F ;
+    --color-black-lite : #1D2939 ; 
+    --color-green : #027A48 ;
+    --color-red : #F04438 ;
+    --border : 0.9px solid #EAECF0 ; 
+}
+.memberrow-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    border: var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+}
+
+.member-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.member-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-img-container img{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: var(--border);
+}
+.member-name{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color-black);
+}
+
+.member-discord{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-black-lite);
+}
+
+.member-status-container{
+    border-radius: 1rem;
+    display: inline-block;
+    width: max-content;
+}
+.member-status{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 13.5px;
+    display: inline-block;
+}
+.member-active{
+    background:rgba(50, 213, 131, 0.1);
+    -webkit-text-fill-color: var(--color-green);
+}
+.member-not-active{
+    background:rgba(240, 68, 56, 0.1);
+    -webkit-text-fill-color: var(--color-red);
+}
+
+.member-departement{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.member-joiningyear{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-black);
+}
