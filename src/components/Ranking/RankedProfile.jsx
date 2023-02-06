@@ -1,5 +1,4 @@
 import icon from "../../assets/react.svg";
-import classNames from "classnames";
 
 const RankedProfile = (props) => {
     return (
@@ -11,7 +10,7 @@ const RankedProfile = (props) => {
                 <div className="rounded-full h-[50px] w-[50px] border flex items-center justify-center border-[#e7e7e7]">
                     <img src={icon} alt="#" />
                 </div>
-                <h4 className="text-lg font-bold">ALLAOUA Okba</h4>
+                <h4 className="text-lg text-center md:text-center font-bold">ALLAOUA Okba</h4>
             </div>
         </div>
     )
