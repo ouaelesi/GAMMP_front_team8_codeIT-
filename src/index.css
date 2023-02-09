@@ -8,3 +8,7 @@
 #root{
     @apply font-MainFont;
 }
+
+body{
+    @apply bg-main-bg;
+}
