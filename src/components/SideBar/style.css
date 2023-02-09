@@ -1,0 +1,3 @@
+.selectedAnchor{
+    @apply text-white bg-black;
+}

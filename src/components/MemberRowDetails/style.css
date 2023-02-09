@@ -8,11 +8,9 @@
 }
 .memberrow-container{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     align-items: center;
-    gap: 2rem;
     background: white;
     border: var(--border);
     border-radius: 6px;

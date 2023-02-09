@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const SideBar = () => {
@@ -5,24 +7,34 @@ const SideBar = () => {
     const navLinks = [
         {
             linkTitle: "Dashboard",
-            linkHref: "#",
+            linkHref: "/",
             linkIcon: "create-dashboard"
         },{
             linkTitle: "Analitics",
-            linkHref: "#",
+            linkHref: "/analytics",
             linkIcon: "signal-alt-3"
+        },{
+            linkTitle: "Profile",
+            linkHref: "/profile",
+            linkIcon: "user"
+        },{
+            linkTitle: "Activities",
+            linkHref: "/activities",
+            linkIcon: "apps"
         }
     ]
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     return (
         <>
-            <aside className='bg-white p-8 flex items-center flex-col justify-start'>
+            <aside className='bg-white p-10 flex items-center flex-col justify-start'>
                 <div className='h-20 w-20 rounded-full bg-black'></div>
-                <ul className='flex flex-col gap-2 mt-16'>
-                    {navLinks.map((link) => {
+                <ul className='flex flex-col gap-4 mt-16'>
+                    {navLinks.map((link, index) => {
                         return (
-                            <li className='nav-li flex items-center justify-center text-white bg-black transition px-4 py-2 rounded-lg font-bold gap-4'>
-                                <a href={link.linkHref}><i className={`uil uil-${link.linkIcon} transition`}></i> {link.linkTitle}</a>
+                            <li key={index} className={`${(index == currentIndex) ? 'selectedAnchor' : ''} nav-li flex items-center justify-center transition px-4 py-2 rounded-lg font-bold gap-4`}>
+                                <Link onClick={() => {setCurrentIndex(index)}} to={link.linkHref}><i className={`uil uil-${link.linkIcon} transition`}></i> {link.linkTitle}</Link>
                             </li>
                         )
                     })}
