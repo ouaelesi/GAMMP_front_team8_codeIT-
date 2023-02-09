@@ -11,6 +11,10 @@ const SideBar = () => {
             linkTitle: "Analitics",
             linkHref: "#",
             linkIcon: "signal-alt-3"
+        },{
+            linkTitle: "profile",
+            linkHref: "/profile",
+            linkIcon: "signal-alt-3"
         }
     ]
 
