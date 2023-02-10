@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import profile from '../../assets/profile.png'
 import './style.css';
 
 const SideBar = () => {
@@ -29,8 +30,10 @@ const SideBar = () => {
     return (
         <>
             <aside className='bg-white p-10 flex items-center flex-col justify-start'>
-                <div className='h-20 w-20 rounded-full bg-black'></div>
-                <ul className='flex flex-col gap-4 mt-16'>
+                <div className='h-20 w-20 rounded-full'>
+                    <img src={profile} className='w-full h-full rounded-full' alt="#" />
+                </div>
+                <ul className='flex flex-col gap-4 mt-6'>
                     {navLinks.map((link, index) => {
                         return (
                             <li key={index} className={`${(index == currentIndex) ? 'selectedAnchor' : ''} nav-li flex items-center justify-center transition px-4 py-2 rounded-lg font-bold gap-4`}>
